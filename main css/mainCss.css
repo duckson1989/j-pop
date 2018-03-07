@@ -1,3 +1,8 @@
+body {
+  background-color: #FF0D00;
+  padding: 0;
+  margin: 0;
+}
 
 .navbar {
     background-color: #333;
@@ -7,7 +12,6 @@
     width: 100%;
 }
 
-
 .navbar a {
     float: left;
     display: block;
@@ -16,17 +20,62 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-
 }
-
 
 .navbar a:hover {
     background-color: #ddd;
-    color: black;
+    color: blue;
+    cursor: grab;
 }
 
 
 .navbar a.active {
     background-color: #4CAF50;
-    color: white;
+    color: red;
+}
+.textcon {
+  text-shadow: 10;
+  width: 40%;
+}
+.cusPics1 {
+  margin-left: 1fr;
+  margin-right: 1fr;
+  z-index: -10;
+  height: auto;
+  width: 30%;
+  transform: rotate(-30deg);
+  border-radius: 80%;
+}
+
+.cusPics2 {
+  z-index: -10;
+  height: auto;
+  width: 30%;
+  margin-left: 25%;
+  transform: rotate(21deg);
+  border-radius: 60px;
+  position: absolute;
+  top: 600px;
+
+}
+
+.cusPics3 {
+  z-index: -10;
+  height: auto;
+  width: 50%;
+  transform: rotate(-25deg);
+  border-radius: 60px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+.cusPics4 {
+  z-index: -10;
+  height: auto;
+  width: 35%;
+  transform: rotate(5deg);
+  border-radius: 60%;
+  position: absolute;
+  right: 50%;
+  margin-top: 60%;
 }
