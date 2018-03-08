@@ -19,7 +19,6 @@ h1 {
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: auto;
 }
 
 .image-slider:nth-child(1) {
@@ -38,6 +37,16 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: gold;
+}
+
+.image-slider h1 {
+	text-align: center;
+	width: 100%;
+}
+
+.block {
+	height: 150px;
 }
 
 
@@ -76,14 +85,12 @@ h1 {
     padding: 1px;
 }
 
-#table-rating tr:nth-child(even)
-{
+#table-rating tr:nth-child(even){
 	background-color: #f2f2f2;
 	opacity: 0.8;
 }
 
-#table-rating tr:nth-child(odd)
-{
+#table-rating tr:nth-child(odd){
 	background-color: transparent;
 	color: red;
 	opacity: 0.8;
