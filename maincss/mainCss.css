@@ -12,6 +12,7 @@ body {
 	padding: 1%;
 	margin: 0 0 0 3%;
 	background-color: lime;
+	border: 1%;
 	border-radius: 20px;
 	background: rgba(156, 252, 165, 0.5);
 }
