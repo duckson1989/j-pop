@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: red;
+	font-size: 78px;
+	text-align: center;
+}
+
+.image-slider {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+.image-slider:nth-child(1) {
+	background-image: url(../Pictures/Top-1-Arashi.jpg);
+}
+
+.image-slider:nth-child(2) {
+	background-image: url(../Pictures/Top-2-Kenshi-Yonezu.png);
+}
+
+.image-slider:nth-child(3) {
+	background-image: url(../Pictures/Top-1-Arashi.jpg);
+}
+
+.image-slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+#table-rating th h1 {
+	font-size: 32px;
+	text-align: center;
+	color: red;
+}
+
+#table-rating h1 {
+	font-size: 32px;
+	text-align: center;
+	color: gold;
+	margin: 0 1em;
+}
+
+#table-rating h2 {
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 1em;
+}
+
+#table-rating {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+	margin: 0 20% 10%;
+	border: 1px solid gold;
+}
+
+#table-rating td, #table-rating th {
+    border-bottom: 1px solid gold;
+	border-top: 1px solid gold;
+    padding: 1px;
+}
+
+#table-rating tr:nth-child(even)
+{
+	background-color: #f2f2f2;
+	opacity: 0.8;
+}
+
+#table-rating tr:nth-child(odd)
+{
+	background-color: transparent;
+	color: red;
+	opacity: 0.8;
+}
+
+#table-rating tr:hover {
+	background-color: indigo;
+	opacity: 0.8;
+}
+
+#table-rating th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: gold;
+    color: white;
+}
