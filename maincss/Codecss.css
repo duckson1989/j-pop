@@ -9,7 +9,7 @@ h1 {
 }
 
 h3{
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0 0 0 8  px;
 }
 
@@ -27,14 +27,28 @@ p {
   align-items:center;
 }
 
-.text-selection {
-  margin: 1% 0;
-}
-
 .code-snippet {
   background-color: darkgrey;
   padding:1%;
   width: 90%;
   border-radius: 10px;
   color: red;
+}
+
+xmp {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  overflow: auto;
+  width: auto;
+  padding: 5px;
+  width: 650px!ie7;
+  padding-bottom: 20px!ie7;
+  max-height: 600px;
+}
+
+xmp::-webkit-scrollbar {
+    display: none;
+}
+
+.xmp {
+  color: blue;
 }

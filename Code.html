@@ -27,6 +27,7 @@
             <h1>Vi gav os selv en challenges</h1>
               <p>Vi ville ikke bruge nogen form for scripting eller PHP</p>
           </div>
+          <!-- parallax start -->
           <div class="text-selection">
             <h1>parallax</h1>
             <p>Vi ville gerne have en form for interactive baggrund da vi fandt <i><b>parallax</b></i>.
@@ -34,18 +35,155 @@
             </p>
           <h3>HTML Code:</h3>
           <div class="code-snippet">
-            <xmp>
-              <div class="parallax">
-                  <div id="group1" class="parallax__group">
-                    <div class="parallax__layer--base"></div>
-                    <div class="parallax__layer parallax__layer--back"></div>
-                    <div class="parallax__layer parallax__layer--deep"></div>
-                  </div>
-              </div>
-            </xmp>
+<xmp class="xmp">
+  <div class="parallax">
+    <div id="group1" class="parallax__group">
+    <div class="parallax__layer--base"></div>
+      <div class="parallax__layer parallax__layer--back"></div>
+      <div class="parallax__layer parallax__layer--deep"></div>
+    </div>
+  </div>
+</xmp>
+          </div>
+          <h3>CSS Code:</h3>
+          <div class="code-snippet">
+<xmp class="xmp">
+  .parallax {
+  	font-size: 200%;
+    	perspective: 1px;
+    	height: 100vh;
+   	overflow-x: hidden;
+    	overflow-y: auto;
+  	text-align: center;
+  }
+
+  .parallax__layer {
+    	padding: 96vh 0;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+  }
+
+  .parallax__layer--base {
+  	  transform: translateZ(0);
+  }
+
+  .parallax__layer--back {
+  	transform: translateZ(-1px);
+  	left: -55%;
+  	top: -110%;
+  }
+
+  .parallax__layer--back img{
+  	width: 135%;
+  	position: relative;
+  	height: auto;
+  	align-items: center;
+  }
+
+  .parallax__layer--deep {
+  	transform: translateZ(-2px) scale(3);
+  	position: absolute;
+  	left: -1%;
+  	width: 101%;
+  	background-image: url(../Pictures/Background/BackGround-LayerDeep.png);
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 125vh;
+    transform-style: preserve-3d;
+  }
+</xmp>
           </div>
           </div>
+<!-- parallax end -->
+<!-- Video start -->
+          <div class="text-selection">
+            <h1>Video Dropdown</h1>
+            <p>Vi ville gerne have at man kunne have lidt mere interaktivtet med vores hjemmeside så vi lavede en <i><b>Video-Dropdown</b></i>.
+              <br> og det er blevet mere <i><b>end acceptabelt</b></i> men det er stadigvæk begrænste hvad man kan lave uden et <i>java script</i>
+            </p>
+          <h3>HTML Code:</h3>
+          <div class="code-snippet">
+  <xmp class="xmp">
+  <div class="dropdown pics">
+      <img src="./pictures/musikgalPics/arashi-love1.jpg" alt="Arnol in japan" width="200" height="125">
+      <div class="dropdown-content">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/SE8Syp3S8tQ"></iframe>
+        <div class="desc">Arashi - Hold It Up</div>
       </div>
+  </div>
+  </xmp>
+    </div>
+      <h3>CSS Code:</h3>
+      <div class="code-snippet">
+  <xmp class="xmp">
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: right;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+  </xmp>
+      </div>
+    </div>
+<!-- Video end -->
+<!-- KeyFrame start -->
+    <div class="text-selection">
+      <h1>keyframes</h1>
+      <p>Vi ville gerne prøve at lege lidt med keyframes på vores hjemmeside så vi lavede nogen <i><b>flotte animationer</b></i>.
+        <br> og selv om at det ser ngoet sjovt ud <i><b>lærte</b></i> vi en god del om det
+      </p>
+    <h3>HTML Code:</h3>
+    <div class="code-snippet">
+<xmp class="xmp">
+  <img class="cusPics2 borderclass anime" src="./pictures/ArnolInJapan.jpg" alt="Arnol in japan">
+  <img class="cusPics3 borderclass anime" src="./pictures/Bobanana.jpg" alt="Bob with Bobanana">
+  <img class="cusPics1 borderclass anime" src="./pictures/mariojapan.jpg" alt="">
+</xmp>
+</div>
+<h3>CSS Code:</h3>
+<div class="code-snippet">
+<xmp class="xmp">.anime {
+    animation: mymove 3s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes mymove {
+    from{
+      left: 50%;
+      opacity: 1;
+      transform: rotate(-25deg);
+    }
+    to{
+      left: 50%;
+      opacity: 0.1;
+      transform: rotate(125deg);
+    }
+  }
+</xmp>
+</div>
+</div>
+<!-- KeyFrame end -->
+      </div>
+    </div>
     </div>
   </body>
 </html>
