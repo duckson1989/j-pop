@@ -8,22 +8,58 @@ h1 {
   color: red;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	font-size: 22px;
+	text-shadow: 2px 2px 1px lightgrey;
+}
+
 h3{
   margin: 20px 0 0 0;
-  padding: 0 0 0 8  px;
+  padding: 0 0 0 8px;
 }
 
 p {
   color: grey;
 }
 
+.information {
+	position: fixed;
+	margin-top: 5%;
+	margin-left: 85%;
+	width: 10%;
+}
+
+.information table{
+	border: 1px solid #D3D3D3;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 5px 10px 10px #888888;
+	width: 100%;
+	height: auto;
+}
+
+.information tr{
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.information ol {
+	padding: 25px;
+	margin: 0;
+}
+
 .text-content {
   border-radius: 10px;
   background-color: white;
-  margin: 5% 10%;
+  margin: 5% 20% 5% 5%;
   padding-top: 3%;
   padding-left: 3%;
   padding-bottom: 3%;
+  box-shadow: 10px 10px 10px #888888;
   align-items:center;
 }
 
@@ -40,8 +76,7 @@ xmp {
   overflow: auto;
   width: auto;
   padding: 5px;
-  width: 650px!ie7;
-  padding-bottom: 20px!ie7;
+  padding-bottom: 20px;
   max-height: 600px;
 }
 
