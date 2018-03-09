@@ -1,5 +1,7 @@
 body {
   margin-top: 5%;
+  background-image: url(../Pictures/Travel-Japan.jpg);
+  background-size: cover;
 }
 .text-cont {
 	z-index: 100;
@@ -51,6 +53,13 @@ border-bottom-left-radius: 10%;
     padding: 15px;
     text-align: center;
 }
+.background {
+  background-color: hsla(360, 100%, 88%, 0.65);
+}
 article {
     display: block;
+}
+fieldset {
+  border-radius: 15px;
+  margin-bottom: 1.5%;
 }

@@ -82,6 +82,13 @@ h3 {
 	z-index: 2;
 	top: 560%;
 }
+#group4{
+	top: 680%;
+	background-color: black;
+	height: 60%;
+	position: sticky!important;
+  bottom: 0px;
+}
 
 #table-rating th h1{
 	font-size: 32px;
@@ -106,8 +113,8 @@ h3 {
 #table-rating {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
-	margin: 0 10% 10%;
+    width: 90%;
+	margin: 0 5%;
 	border: 1px solid gold;
 }
 
@@ -141,14 +148,29 @@ h3 {
     color: white;
 }
 
-.music table{
+.text-container1 {
+	position: absolute;
+	top: -200vh;
+	left: 0;
+	right: 0;
+}
+
+.music{
 	padding: 0;
+	width: 90%;
+	margin: 0 5%;
 }
 
 .music tr:nth-child(odd){
-	background-color: hsla(55, 100%, 50%, 0.61);
+	background-color: hsla(55, 100%, 50%, 0.80);
 }
 
 .music tr:nth-child(even){
-	background-color: hsla(105, 100%, 50%, 0.61);
+	background-color: hsla(105, 100%, 50%, 0.80);
+}
+
+.footer {
+	width: 100%;
+	height: 40%;
+	background-color: purple;
 }
